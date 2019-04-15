@@ -3,9 +3,10 @@ class ProjectsController < ApplicationController
 
   # GET /projects
   def index
-    @projects = Project.all
+    projects = Project.all
 
-    render json: @projects
+    render jsonapi: projects,
+           fields: { posts: [:name, :description, :date] }
   end
 
   # GET /projects/1
