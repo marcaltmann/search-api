@@ -1,7 +1,7 @@
 class SerializableProject < JSONAPI::Serializable::Resource
   type 'projects'
 
-  attributes :name, :description
+  attributes :name, :description, :logo
 
   attribute :date do
     @object.created_at

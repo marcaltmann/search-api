@@ -9,6 +9,6 @@ class Project < ApplicationRecord
   end
 
   def _geoloc
-    locations.map { |l| { lat: l.lat, lng: l.long }}
+    locations.map { |l| { lat: l.lat, lng: l.lng }}
   end
 end

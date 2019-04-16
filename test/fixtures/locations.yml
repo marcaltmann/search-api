@@ -5,11 +5,11 @@ one:
   city: MyString
   country: MyString
   lat: 1.5
-  long: 1.5
+  lng: 1.5
 
 two:
   name: MyString
   city: MyString
   country: MyString
   lat: 1.5
-  long: 1.5
+  lng: 1.5

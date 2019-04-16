@@ -1,7 +1,7 @@
 class SerializableLocation < JSONAPI::Serializable::Resource
   type 'locations'
 
-  attributes :name, :city, :country, :lat, :long
+  attributes :name, :city, :country, :lat, :lng
 
   attribute :date do
     @object.created_at

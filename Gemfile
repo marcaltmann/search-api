@@ -13,8 +13,8 @@ gem 'puma', '~> 3.11'
 # gem 'jbuilder', '~> 2.5'
 
 gem "jsonapi-rails"
-
 gem "algoliasearch-rails"
+gem "faker", "~> 1.9.3"
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
