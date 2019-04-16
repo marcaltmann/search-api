@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :locations
   default_url_options host: 'https://www.example.com'
 
   resources :projects

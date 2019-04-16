@@ -11,3 +11,20 @@ projects = Project.create([
   { name: 'Secret Project' },
   { name: 'Build prototype' }
 ])
+
+locations = Location.create([
+  { name: 'gov headquarters', city: 'Berlin', country: 'DEU', lat: 52.5151666, long: 13.4014882 },
+  { name: 'vienna prater', city: 'Wien', country: 'AUT', lat: 48.2153674, long: 16.3948962 }
+])
+
+p1 = projects[0]
+l1 = locations[0]
+
+p1.locations << l1
+p1.save
+
+projects[1].locations << locations[1]
+projects[1].save
+
+projects[2].locations << locations[1]
+projects[2].save
