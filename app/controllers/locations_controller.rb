@@ -3,9 +3,9 @@ class LocationsController < ApplicationController
 
   # GET /locations
   def index
-    @locations = Location.all
+    locations = Location.all
 
-    render json: @locations
+    render jsonapi: locations
   end
 
   # GET /locations/1
