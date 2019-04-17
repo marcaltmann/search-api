@@ -3,7 +3,7 @@ class Project < ApplicationRecord
 
   has_and_belongs_to_many :locations
 
-  algoliasearch do
+  algoliasearch index_name: "project_#{Rails.env}" do
     # all attributes will be sent
     add_attribute :_geoloc
   end
